@@ -21,3 +21,9 @@ $ docker run -it <containerID> npm run test
 # Run the docker-compose file
 $ docker-compose up -d
 ```
+
+# Create Feature Branch
+
+```bash
+$ git checkout -b feature
+```
