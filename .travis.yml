@@ -1,0 +1,10 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  # Build the docker container and tag it with the name 'twci/docker-react'
+  - docker build -t twci/docker-react -f Dockerfile.dev .
+
+scripts:
+  - docker run twci/docker-react npm run test -- --coverage
