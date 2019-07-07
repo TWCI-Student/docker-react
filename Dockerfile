@@ -9,4 +9,5 @@ RUN npm run build
 
 # Second step: Create the nginx container
 FROM nginx
+EXPOSE 80
 COPY --from=builder /app/build /usr/share/nginx/html
